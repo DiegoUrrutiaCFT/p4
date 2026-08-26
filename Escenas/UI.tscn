@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://uro6oqnmxxe1"]
+
+[ext_resource type="Script" uid="uid://c63xgdfsdd4d7" path="res://Scripts/ui.gd" id="1_ysecq"]
+[ext_resource type="Texture2D" uid="uid://cxl0scjupt8r" path="res://Rocky Roads/UI/Coin.png" id="2_g0drk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysecq"]
+atlas = ExtResource("2_g0drk")
+region = Rect2(0, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0drk"]
+atlas = ExtResource("2_g0drk")
+region = Rect2(16, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5fs4"]
+atlas = ExtResource("2_g0drk")
+region = Rect2(32, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukrey"]
+atlas = ExtResource("2_g0drk")
+region = Rect2(48, 0, 16, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_go3um"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysecq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0drk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5fs4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukrey")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[node name="UI" type="CanvasLayer" unique_id=1518650517]
+script = ExtResource("1_ysecq")
+
+[node name="Control" type="Control" parent="." unique_id=1471567139]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 23.000002
+offset_top = 532.0
+offset_right = 63.0
+offset_bottom = 572.0
+scale = Vector2(3.6800003, 3.6800003)
+
+[node name="Node2D" type="Node2D" parent="Control" unique_id=1239695187]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="Control/Node2D" unique_id=322878863]
+position = Vector2(64.673904, -124.18476)
+scale = Vector2(2.065217, 2.065217)
+sprite_frames = SubResource("SpriteFrames_go3um")
+animation = &"idle"
+frame_progress = 0.12310286
+
+[node name="Label" type="Label" parent="Control" unique_id=1839882908]
+layout_mode = 0
+offset_left = -0.5434788
+offset_top = -145.38043
+offset_right = 39.45652
+offset_bottom = -122.38043
+scale = Vector2(0.20652199, 0.16837463)
+theme_override_colors/font_color = Color(0.7106475, 0, 0.08621936, 1)
+theme_override_font_sizes/font_size = 160
+text = "0"
+
+[node name="Restantes" type="Label" parent="Control" unique_id=735204203]
+layout_mode = 0
+offset_left = 21.46739
+offset_top = -133.96739
+offset_right = 61.467392
+offset_bottom = -110.96739
+scale = Vector2(0.30434793, 0.30434793)
+theme_override_colors/font_color = Color(0.20392157, 1, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "/ 7"
+
+[node name="Instrucciones" type="Label" parent="Control" unique_id=1715627428]
+layout_mode = 0
+offset_left = 184.23912
+offset_top = 9.510864
+offset_right = 413.23914
+offset_bottom = 32.510864
+scale = Vector2(0.14130464, 0.27083376)
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_font_sizes/font_size = 60
+text = "PRESIONA \"R\" PARA REINCIAR"

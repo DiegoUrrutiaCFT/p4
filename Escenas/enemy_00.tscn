@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://csgai8rhpubid"]
+
+[ext_resource type="Script" uid="uid://c0l2qe3h0lcjx" path="res://enemy_00.gd" id="1_gmulw"]
+[ext_resource type="Texture2D" uid="uid://cwod3tp6uaryr" path="res://Rocky Roads/Enemies/bird.png" id="2_sst6p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcid7"]
+atlas = ExtResource("2_sst6p")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0n6n"]
+atlas = ExtResource("2_sst6p")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjjw3"]
+atlas = ExtResource("2_sst6p")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6djw3"]
+atlas = ExtResource("2_sst6p")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_go3um"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hcid7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0n6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjjw3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6djw3")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 9.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_dt66q"]
+script/source = "extends Area2D
+
+
+func _on_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qhg5m"]
+
+[node name="Enemy_00" type="Node2D" unique_id=945041827]
+script = ExtResource("1_gmulw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1151446767]
+sprite_frames = SubResource("SpriteFrames_go3um")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.77339727
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1433334746]
+script = SubResource("GDScript_dt66q")
+
+[node name="Collision" type="CollisionShape2D" parent="Area2D" unique_id=1285979202]
+shape = SubResource("CircleShape2D_qhg5m")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

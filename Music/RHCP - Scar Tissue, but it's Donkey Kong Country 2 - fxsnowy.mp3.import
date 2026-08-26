@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c47uqq76t058d"
+path="res://.godot/imported/RHCP - Scar Tissue, but it's Donkey Kong Country 2 - fxsnowy.mp3-0db1f60ab5ad67c31bf8f949b3fd6443.mp3str"
+
+[deps]
+
+source_file="res://Music/RHCP - Scar Tissue, but it's Donkey Kong Country 2 - fxsnowy.mp3"
+dest_files=["res://.godot/imported/RHCP - Scar Tissue, but it's Donkey Kong Country 2 - fxsnowy.mp3-0db1f60ab5ad67c31bf8f949b3fd6443.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

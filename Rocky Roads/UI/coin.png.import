@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dro2w013j8i2s"
-path="res://.godot/imported/coin.png-4df266c9c7ee0084f1d648a160122326.ctex"
+uid="uid://cxl0scjupt8r"
+path="res://.godot/imported/Coin.png-ba640d17ad0e362b59fad01dcc7fc253.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rocky Roads/UI/coin.png"
-dest_files=["res://.godot/imported/coin.png-4df266c9c7ee0084f1d648a160122326.ctex"]
+source_file="res://Rocky Roads/UI/Coin.png"
+dest_files=["res://.godot/imported/Coin.png-ba640d17ad0e362b59fad01dcc7fc253.ctex"]
 
 [params]
 

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d24rv31l3dnn8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_go3um"]
+size = Vector2(994, 20)
+
+[node name="ZonaMuerte" type="Area2D" unique_id=1536374228]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1648121768]
+position = Vector2(487, 0)
+shape = SubResource("RectangleShape2D_go3um")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
