@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b8w526g6chloq"]
 
 [ext_resource type="Script" uid="uid://dpugh0x5y3clr" path="res://Scripts/playerController.gd" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://dr6ia7dgy5ys5" path="res://Rocky Roads/Enemies/chicken.png" id="2_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://dr6ia7dgy5ys5" path="res://Assets/Rocky Roads/Enemies/chicken.png" id="2_kpjcp"]
 [ext_resource type="AudioStream" uid="uid://cp2my1nfgmomr" path="res://Music/Bonk Sound Effect - Mr. Sound Effects.mp3" id="3_c1rio"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kne1u"]

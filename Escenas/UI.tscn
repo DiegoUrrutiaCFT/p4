@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://uro6oqnmxxe1"]
 
 [ext_resource type="Script" uid="uid://c63xgdfsdd4d7" path="res://Scripts/ui.gd" id="1_ysecq"]
-[ext_resource type="Texture2D" uid="uid://cxl0scjupt8r" path="res://Rocky Roads/UI/Coin.png" id="2_g0drk"]
+[ext_resource type="Texture2D" uid="uid://cxl0scjupt8r" path="res://Assets/Rocky Roads/UI/Coin.png" id="2_g0drk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ysecq"]
 atlas = ExtResource("2_g0drk")
@@ -58,7 +58,7 @@ position = Vector2(64.673904, -124.18476)
 scale = Vector2(2.065217, 2.065217)
 sprite_frames = SubResource("SpriteFrames_go3um")
 animation = &"idle"
-frame_progress = 0.12310286
+frame_progress = 0.61138546
 
 [node name="Label" type="Label" parent="Control" unique_id=1839882908]
 layout_mode = 0
